@@ -38,7 +38,6 @@ body {
   place-items: center;
 }
 
-/* navigation styles start here */
 
 header {
   background: var(--background);
@@ -398,7 +397,7 @@ input[type=submit]:hover {
 
 }
 
-/* Style the icon bar links */
+
 .icon-bar a {
   display: block;
   text-align: center;
@@ -409,7 +408,6 @@ input[type=submit]:hover {
   flex-wrap: wrap;
 }
 
-/* Style the social media icons with color, if you want */
 .icon-bar a:hover {
   background-color: #000;
 }
