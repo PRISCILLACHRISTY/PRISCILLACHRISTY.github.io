@@ -22,9 +22,10 @@
 
 body {
 	margin: 0;
-	background: #222;
+	background: white;
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 400;
+	height: 2000px;
 }
 
 .content {
@@ -132,7 +133,7 @@ nav a:hover {
 }
 
 @media screen and (min-width: 800px) {
-  .nav-toggle-label {
+  .nav-toggle-label,.container {
     display: none;
   }
 
@@ -233,23 +234,31 @@ a:hover{
 		text-align: left;
 	}*/
 }
-.col-container,.md3{
+.col-container{
 	display: flex;
 	width:100%;
 	flex-wrap: wrap;
-
 }
+@media screen and (min-width: 80px) {
+  .col-container{
+    display: flex;
+    width:100%;
+   
+  }
 
 .col1,.col2,.col3,.sec{
 	flex-grow: 1;
 	flex-shrink: 1;
 	padding: 10px;
 	margin: 0;
-	color: white;
-	justify-content: space-around;
+	color: inherit;
+	justify-content: center;
 	text-decoration: none;
 	font-size: 20px;
 	flex-wrap: wrap;
+}
+.content1{
+	margin-left: 75px;
 }
 .col1{
 	flex:1;
@@ -258,7 +267,8 @@ a:hover{
 	flex:1;
 }
 .col3{
-	flex: 1;
+	flex:1;
+	font-family: sans-serif;
 }
 .col1,.col2,.col3 a{
 	font-family: sans-serif;
@@ -269,6 +279,9 @@ a:hover{
 	width:100%;
 	flex-wrap: wrap;
 
+}
+.icons{
+	align-items: center;
 }
 /*.c1{
 	flex-grow: 1;
@@ -285,6 +298,10 @@ a:hover{
 .image4,.img5,.img6{
 	vertical-align: middle;
 	border: 0;
+}
+.myslides{
+	max-width: 100%;
+	padding-left: 40px;
 }
 #m{
 	color: white;
@@ -317,6 +334,110 @@ a:hover{
 	color: white;
 
 }
+h2{
+	text-align:center;
+	display: flex;
+	flex-wrap: wrap;
+}
+h1{
+	display: flex;
+	text-align: left;
+	font-family: sans-serif;
+	font-weight: 500;
+	line-height: 1.1;
+	font-size: 20px;
+}
+h3{
+	color: #ab182c;
+	text-align: center;
+	font-size: 80px;
+}
+form {
+    border: 4px solid #f1f1f1;
+}
+
+.container {
+    padding: 25px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+input[type=text], input[type=submit] {
+    width: 50%;
+    padding: 12px;
+    margin: 50px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    justify-content: center;
+    /*text-align: center;*/
+    /*margin-left: 320px;*/
+    flex-wrap: wrap;
+}
+
+input[type=submit] {
+    background-color: #ab182c;
+    color: white;
+    border-color: #ab182c;
+    border: none;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 0px;
+  margin: 0px;
+
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+  flex-wrap: wrap;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
 .footer{
 	/*position: fixed;*/
 	display: flex;
@@ -336,6 +457,7 @@ a:hover{
 .abt{
 	flex-wrap: wrap;
 	flex: 1;
+	text-align: left;
 }
 
 
